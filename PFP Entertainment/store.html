@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="image/pfp6.png">
+		<title>PFP Entertaintment</title>
+		<link rel="stylesheet" href="css/store.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script>
+		function popUp() {
+			alert("Added to Cart!");
+		}
+
+		function sold() {
+			alert("Thanks for Purchasing!");
+		}
+		</script>
+	</head>
+
+	<body>
+		<div class="pageWrap">
+		<div class="navbar">
+			<img class="pfpLogo navBtn" src="image/pfp.png" style="padding:10px;">
+			<a href="index.html" class="navBtn"><i class="fas fa-home navIcon"></i>Home</a>
+			<a href="artist.html" class="navBtn"><i class="fas fa-user navIcon"></i>Artist</a>
+			<a href="store.html" class="navBtn"><i class="fas fa-store navIcon"></i>Store</a>
+			<a href="audition.html" class="navBtn"><i class="fas fa-video navIcon"></i>Audition</a>
+			<a href="contact.html" class="navBtn"><i class="far fa-envelope navIcon"></i>Contact Us</a>
+			<a href="event.html" class="navBtn"><i class="far fa-calendar-alt navIcon"></i>Event</a>
+		</div>
+		<br/><br/><br/><br/>
+		<h1 class="pageTitle" style="margin-top:40px;"> - STORE - </h1>
+	<div class="item">
+			<div class="card">
+				<div class="white shadow">
+		  	<img class="shirt" src="image/twiceshirt1.png" alt="Merch" style="width:100%">
+		  	<h1>TWICE<br/>T-Shirt</h1>
+		  		<p class="price">$19.99</p>
+					<button class="size">S</button>
+					<button class="size">M</button>
+					<button class="size">L</button>
+					<button class="size">XL</button>
+		  		<p>TWICE Black Colour T-Shirt</p>
+					<button class="atc" onclick="popUp()">Add to Cart</button>
+				</div>
+			</div>
+
+
+		<div class="card">
+			<div class="white shadow">
+				<img class="shirt" src="image/twiceshirt2.jpg" alt="Merch" style="width:100%">
+		  	<h1>TWICE<br/>T-Shirt</h1>
+		  		<p class="price">$19.99</p>
+					<button class="size">S</button>
+					<button class="size">M</button>
+					<button class="size">L</button>
+					<button class="size">XL</button>
+		  		<p>TWICE White Colour T-Shirt</p>
+					<button class="atc" onclick="popUp()">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="white shadow">
+				<img class="shirt" src="image/bpshirt1.jpg" alt="Merch" style="width:100%">
+		  	<h1>BLACKPINK<br/>T-Shirt</h1>
+		  		<p class="price">$19.99</p>
+					<button class="size">S</button>
+					<button class="size">M</button>
+					<button class="size">L</button>
+					<button class="size">XL</button>
+		  		<p> BLACKPINK Black Colour T-Shirt </p>
+					<button class="atc" onclick="popUp()">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="white shadow">
+				<img class="shirt" src="image/bpshirt2.jpg" alt="Merch" style="width:100%">
+		  	<h1> BLACKPINK<br/>T-Shirt </h1>
+		  		<p class="price">$19.99</p>
+						<button class="size">S</button>
+						<button class="size">M</button>
+						<button class="size">L</button>
+						<button class="size">XL</button>
+		  		<p>BLACKPINK White Colour T-Shirt</p>
+					<button class="atc" onclick="popUp()">Add to Cart</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="cart" style="background-color:white;clear:left;">
+		<table class="cartTable">
+			<caption style="font-size:38px;margin:20px;">Cart</caption>
+			<tr class="header">
+				<th>ITEM</th>
+				<th>&nbsp;</th>
+				<th>QUANTITY</th>
+				<th>&nbsp;</th>
+				<th>PRICE</th>
+				<th>&nbsp;</th>
+			</tr>
+
+			<tr>
+				<td>
+					<img class="shirtCart" src="image/twiceshirt1.png">
+				</td>
+				<td>Twice Shirt Black Colour</td>
+				<td>
+					<input class="inputShirt" type="number"/>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					$19.99
+				</td>
+				<td>
+					<button class="removeShirt" onClick="myClear1()">Remove</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img class="shirtCart" src="image/twiceshirt2.jpg">
+				</td>
+				<td>Twice Shirt White Colour</td>
+				<td>
+					<input class="inputShirt" type="number"/>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					$19.99
+				</td>
+				<td>
+					<button class="removeShirt">Remove</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img class="shirtCart" src="image/bpshirt1.jpg">
+				</td>
+				<td>BLACKPINK Shirt Black Colour</td>
+				<td>
+					<input class="inputShirt" type="number"/>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					$19.99
+				</td>
+				<td>
+					<button class="removeShirt">Remove</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img class="shirtCart" src="image/bpshirt2.jpg">
+				</td>
+				<td>BLACKPINK Shirt Black Colour</td>
+				<td>
+					<input class="inputShirt" type="number"/>
+				</td>
+				<td>&nbsp;</td>
+				<td>
+					$19.99
+				</td>
+				<td>
+					<button class="removeShirt">Remove</button>
+				</td>
+			</tr>
+		</table>
+		<button class="checkout" onclick="sold()"><i class="fas fa-shopping-cart navIcon"></i>CHECKOUT</button>
+	</div>
+</div>
+	<br/>
+	<!--FOOTER-->
+			<div class="footer">
+				<h1 style="float:left;">PFP Entertaintment</h1>
+				<span class="socialMedia" style="float:right;">
+					<a class="smBtn" href="https://www.facebook.com" target="_blank">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a class="smBtn" href="https://www.twitter.com" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a class="smBtn" href="https://www.instagram.com" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a class="smBtn" href="https://www.youtube.com" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</span>
+					<ul class="footerUl">
+						<li><i class="fas fa-phone-alt navIcon"></i>+65 91234567</li>
+						<li><i class="fas fa-envelope navIcon"></i>pfpentertaintment@gmail.com</li>
+					</ul>
+				<span class="copyright">
+					&copy PFP Entertaintment
+				</span>
+				<a class="goTop" href="#"> <i class="fas fa-arrow-up"></i> </a>
+			</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+h1.audition {
+  font-size: 48px;
+  text-transform: uppercase;
+  color:black;
+  background-color:white;
+  margin-top:-20px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.slideshow {
+  width:800px;
+  height:400px;
+  background:url()
+  display:block;
+  animation: slide 15s infinite;
+  float:left;
+  margin-top:0;
+}
+
+@keyframes slide {
+  25%{
+    background:url(../image/1.jpg);
+  }
+  50%{
+    background:url(../image/2.jpg);
+  }
+  75%{
+    background:url(../image/3.jpg);
+  }
+  100%{
+    background:url(../image/4.jpg);
+  }
+}
+
+
+h2.title {
+  font-size: 40pt;
+  text-transform: uppercase;
+  color:#4d4d4d;
+  display: inline;
+}
+
+.audiContent {
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+.toolTIP {
+  font-size: 40pt;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  color:white;
+  margin:15px;
+  border-radius:20px;
+  padding:5px;
+}
+
+.toolTIP .toolTIPtext {
+  visibility: hidden;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin-left: 0px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.toolTIP:hover .toolTIPtext {
+  visibility: visible;
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+
+div.audiTip {
+  font-size: 40pt;
+  background-color: black;
+  color:white;
+  margin:15px;
+  border-radius:20px;
+  padding:5px;
+}
+
+div.audiText {
+  font-size:20px;
+}
+
+.popup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  padding:5px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  font-size:20px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+.requirementAudi {
+font-size:16px;
+}
+
+.requirementAudi h1 {
+  font-size:28px;
+  font-weight: bold;
+}
+
+div.audition {
+position:relative;
+left:-800px;
+}
+
+.toolTIP {
+  padding:10px;
+}

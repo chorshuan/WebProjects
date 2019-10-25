@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PFP Entertainment Audition</title>
+		<link rel="icon" href="image/pfp6.png">
+		<link rel="stylesheet" href="css/audition.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<meta content="width-device-width, initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script>
+		// When the user clicks on div, open the popup
+		function myPopup() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
+		}
+
+		function myEmail() {
+			alert("Thanks for registering your interest!");
+		}
+		function myMaillist() {
+			var txt;
+			var person = prompt("Please enter your email:", "example@example.com");
+			if (person == null || person == "") {
+				txt = "User cancelled the prompt.";
+			} else {
+				myEmail();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="pageWrap">
+			<div class="navbar">
+				<img class="pfpLogo navBtn" src="image/pfp.png" style="padding:10px;">
+				<a href="index.html" class="navBtn"><i class="fas fa-home navIcon"></i>Home</a>
+				<a href="artist.html" class="navBtn"><i class="fas fa-user navIcon"></i>Artists</a>
+				<a href="store.html" class="navBtn"><i class="fas fa-store navIcon"></i>Store</a>
+				<a href="audition.html" class="navBtn"><i class="fas fa-video navIcon"></i>Audition</a>
+				<a href="contact.html" class="navBtn"><i class="far fa-envelope navIcon"></i>Contact Us</a>
+				<a href="event.html" class="navBtn"><i class="far fa-calendar-alt navIcon"></i>Events</a>
+			</div>
+
+		<h1 class="pageTitle" style="margin-top:-19px;margin-bottom:-20px;"> - AUDITION - </h1>
+		<div>
+		<div class="slideshow"></div>
+		<div class="requirementAudi">
+			<h1>Requirement</h1>
+			<ul style="list-style-type:none;">
+				<li>Age above 16, if below 21, parents consent are required</li>
+				<li>Able to converse fluently in Korean</li>
+				<li>Able to stay in Korea for training</li>
+			</ul>
+			<h1>We are looking for</h1>
+			<dl>
+				<dt>Vocal</dt>
+					<dd>K-pop, pop etc(No limit in genre)<br/>Singing capacity based on breathing, pitch, rhythm, pronunciation and technique</dd>
+				<dt>Dance</dt>
+					<dd>Self-choreographed dance, cover dance, hip-hop, popping(No restrictions in genre)</br>Flexibility, rhythmical sense, posture and dance steps, stage presence</dd>
+				<dt>Rap</dt>
+					<dd>Cover song, self-written song (No restrictions in genre)<br/>Technique based on clear diction and sense of rhythm</dd>
+			</dl>
+		</div>
+		</div>
+	<div class="audition">
+		<div class="toolTIP">&nbsp;<i class="fas fa-envelope">&nbsp;</i>
+			<span class="toolTIPtext">
+				Click <a href="mailto:pfpEntertainment.com?Subject=PFP%20Entertainment%20Audition">here</a> to email us your resume with a short video of your talent!<br/>
+			</span>
+		</div>
+
+		<div class="toolTIP">&nbsp;<i class="fas fa-microphone">&nbsp;</i>
+			<span class="toolTIPtext">Live Audition is currently not available, click <a onclick="myMaillist()">here</a> to join our mailing list.</span>
+		</div>
+
+		<div class="toolTIP">&nbsp;<i class="fas fa-globe-asia">&nbsp;</i>
+			<span class="toolTIPtext">Global Audition is currently not available, click <a onclick="myMaillist()">here</a> to join our mailing list.</span>
+		</div>
+
+		<div class="toolTIP">&nbsp;<i class="fas fa-truck-moving">&nbsp;</i>
+			<span class="toolTIPtext">Audition Truck is currently not available, click <a onclick="myMaillist()">here</a> to join our mailing list.</span>
+		</div>
+	</div>
+		<!--FOOTER-->
+				<div class="footer">
+					<h1 style="float:left;">PFP Entertainment</h1>
+					<span class="socialMedia" style="float:right;">
+						<a class="smBtn" href="https://www.facebook.com" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a class="smBtn" href="https://www.twitter.com" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="smBtn" href="https://www.instagram.com" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a class="smBtn" href="https://www.youtube.com" target="_blank">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</span>
+						<ul class="footerUl">
+							<li><i class="fas fa-phone-alt navIcon"></i>+65 91234567</li>
+							<li><i class="fas fa-envelope navIcon"></i>pfpEntertainment@gmail.com</li>
+						</ul>
+					<span class="copyright">
+						&copy PFP Entertainment
+					</span>
+					<a class="goTop" href="#"> <i class="fas fa-arrow-up"></i> </a>
+				</div>
+		</div>
+	</body>
+</html>

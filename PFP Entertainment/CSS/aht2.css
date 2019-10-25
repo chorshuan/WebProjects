@@ -1,0 +1,46 @@
+/* Split the screen in half */
+.split {
+  height:auto;
+  width: 50%;
+
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  float:left;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image:url("../image/tss7.jpg");
+  background-repeat:no-repeat;
+  transition:0.8s;
+}
+.left:hover{
+	background-image:url("../image/TWICE2jq.jpg");
+}
+/* Control the right side */
+.right {
+  right: 0;
+  background-image:url("../image/bpss2.jpg");
+  background-repeat:no-repeat;
+  transition:0.8s;
+}
+.right:hover{
+	background-image:url("../image/BPPP.jpg");
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+  text-align: center;
+  visibility:hidden;
+
+}
+
+
+.clearfix {
+  overflow: auto;
+  background-image:url("../image/pink3.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
